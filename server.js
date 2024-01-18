@@ -86,7 +86,7 @@ mongoose
                 }
 
                 // Hash the new password
-                const hashedPassword = await bcrypt.hash(newPassword, 10);
+                const hashedPassword = await bcrypt.hash(password, 10);
 
                 // Update the user's password and clear the reset code
                 user.password = hashedPassword;
